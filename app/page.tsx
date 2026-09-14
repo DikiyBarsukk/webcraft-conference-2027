@@ -288,7 +288,7 @@ export default function Home() {
                   <label className="agreement"><Checkbox checked={agreed} onCheckedChange={(value) => setAgreed(value === true)} aria-label="Confirm information is accurate" /><span>I confirm that the information above is accurate. <b>*</b></span></label>
                   {error && <p className="form-error" role="alert">{error}</p>}
                   <Button type="submit" size="lg" disabled={status === "submitting"} className="submit-button">{status === "submitting" ? <LoaderCircle className="animate-spin" aria-hidden="true" /> : null}{status === "submitting" ? "Submitting…" : "Submit registration"}{status !== "submitting" ? <ArrowRight aria-hidden="true" /> : null}</Button>
-                  <p className="privacy-note">Your details are used only to organise this event.</p>
+                  <p className="privacy-note">Your details are used only to organise this event. Submission delivery is provided by FormSubmit.</p>
                 </div>
               </form>
             )}
